@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>烘培工坊</title>
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+}
+header{
+    background-color: rgba(35,28,26,0.8);
+    height: 80px;
+    width: 100%;
+    position: fixed;
+}
+h1{
+    color: white;
+    position: absolute;
+    left: 120px;
+    top: 0;
+    line-height: 80px;
+    background-image: url(img/wang.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 210px;
+    text-indent: -9999px;
+}
+header ul{
+    position: absolute;
+    right: 5vw;
+    top: 0;
+    line-height: 80px;
+}
+header li{
+     display: inline;
+     margin-right: 4vw;
+}
+header a{
+    color: white;
+    text-decoration: none;
+}
+header a:hover{
+    text-decoration: underline;
+}
+.news{
+    background-color: antiquewhite;
+    color: white;
+    height: 95vh;
+    background-image: url("img/0451211bread.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.news h2{
+    font-size: 60px;
+}
+.news p{
+    color:#FEF7E6;
+    font-size: 18px;
+    margin: 25px 0;
+}
+.news a{
+    color: white;
+    text-decoration: none;
+    border: 1px solid #acacac;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.slogan{
+    background-color: #485652;
+    color: white;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    line-height: 1.8em;
+}
+footer{
+    background-color: #000000;
+    color: #b7b7b7;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+.shop{
+    display: flex;
+}
+.shop img{
+    width: 50%;
+}
+.info{
+    width: 50%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.info h2{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.info p{
+    text-align: center;
+    line-height: 2em;
+}
+.product{
+    display: flex;
+    background-color: #ede9db;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 180px 80px;
+}
+.product div{
+    width: 300px;
+    text-align: center;
+}
+.product img{
+    width: 100%;
+    border-radius: 10px;
+}
+.product h3{
+    font-size: 30px;
+    margin: 20px 0;
+}
+.product p{
+    font-size: 20px;
+    line-height: 1.6em;
+}
+.newsletter{
+    background-color: #485652;
+    color: white;
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.newsletter p{
+    margin-bottom: 20px;
+}
+.newsletter input,.newsletter button{
+    background-color: transparent;
+    color: white;
+    border: 1px solid #949d9a;
+    padding: 10px;
+    border-radius: 5px;
+}
+.newsletter input{
+    width: 200px;
+    margin-right: 15px;
+}
+.newsletter button{
+    width: 80px;
+    cursor: pointer;
+}
+input::placeholder{
+    color: #dddddd;
+}
+input:focus{
+    outline: none;
+    border-color: #e0e9a3;
+}
+.menu{
+    display: none;
+}
+/*響應式設計*/
+@media screen and (max-width: 768px){
+    header ul{
+        display: none;
+    }
+    header h1{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .news h2{
+        font-size: 40px;
+    }
+    .menu{
+        display: block;
+        background-color: transparent;
+        color: white;
+        font-size: 35px;
+        position: absolute;
+        top: 15px;
+        left: 20px;
+        border: none;
+        cursor: pointer;
+    }
+    .shop{
+        flex-direction: column;
+    }
+    .shop img{
+        width: 100%;
+    }
+    .info{
+        width: 100%;
+        padding: 40px 0;
+    }
+    .info h2{
+        font-size: 30px;
+    }
+    .product{
+        flex-direction: column;
+        padding: 60px 0;
+    }
+    .product div{
+        margin-bottom: 30px;
+    }
+}
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <button class="menu">&#9776;</button>
+    <h1>烘培工坊</h1>
+    <nav>
+    <ul>
+        <li><a herf="#">最新消息</a></li>
+        <li><a herf="#">關於我們</a></li>
+        <li><a herf="#">門市據點</a></li>
+        <li><a herf="#">會員專區</a></li>
+    </ul>
+    </nav>
+    </header>
+
+    <main>
+        <section class="news">
+            <h2>健康穀物麵包新鮮出爐</h2>
+            <p><strong>亞麻的細語、葵花的微風，每一口都是自然的故事</strong></p>
+            <p><em><a herf="#">了解更多</a></em></p>
+        </section>
+    
+
+        <section class="slogan">
+            <blockquote>"堅持採用天然奶油，自家培養天然酵母，<br>魯邦種、葡萄種酵母。食材嚴選"</blockquote>
+        </section>
+
+        <section class="shop">
+            <img src="img/bread.jpg" alt="ㄏㄏㄏ">
+            <div class="info">
+            <h2>想吃的朋友記得打門市電話0285092829預訂取貨!</h2>
+            <p>全品項蛋糕鮮奶油使用日本北海道天然動物性鮮奶油，<br>入口即化，不油膩，從新鮮牛奶粹取製成鮮奶油。蛋奶素可食用。</p>
+            </div>
+        </section>
+
+        <section class="product">
+            <div>
+                <img src="img/s1.jpg">
+                <h3>雙梅奶油麵包</h3>
+                <p>使用台灣新鮮現採草莓<br>清爽入口即化動物性鮮奶油</p>
+            </div>
+            <div>
+                <img src="img/s2.jpg">
+                <h3>火腿潛艇堡</h3>
+                <p>大尺吋，很重<br>一個頂三頓</p>
+            </div>
+            <div>
+                <img src="img/s3.jpg">
+                <h3>法式可頌</h3>
+                <p>用料要嚴選<br>做工要細緻</p>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <p>歡迎訂閱，可不定時收到優惠喔</p>
+            <form>
+                <input type="email" placeholder="請輸入您的Email" required>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>阿寶的麵包店~糖馨烘焙工坊 </p>
+    </footer>
+</body>
+</html>
